@@ -1,5 +1,5 @@
 dependencies:
-  '@polymer/lit-element': 0.4.0
+  '@polymer/polymer': 3.0.0-pre.13
   '@webcomponents/webcomponentsjs': 2.0.0-beta.2
   polymer-cli: 1.7.0-pre.16
 packages:
@@ -631,13 +631,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zDFW4CqQq7kmg8BfX8exmnaCtQ0vDbAkkiemrBRRLZNfrNtKwqzh9EthoJTyRKCZ7yebpR7U8ksNvTB5kR/uOQ==
-  /@polymer/lit-element/0.4.0:
-    dependencies:
-      '@polymer/polymer': 3.0.0-pre.13
-      lit-html: 0.9.0
-    dev: false
-    resolution:
-      integrity: sha512-fDnr66sBW2FtNAueCfk6YCw6D63ai8p3mutVCD/phrlWlbI34wliAAZWC7/5PfZYNUaGaEg65jEVyf/UeNE4Gg==
   /@polymer/polymer/3.0.0-pre.13:
     dependencies:
       '@webcomponents/shadycss': 1.2.0-0
@@ -4793,10 +4786,6 @@ packages:
       node: '>= 0.6.3'
     resolution:
       integrity: sha1-9plf4PggOS9hOWvolGJAe7dxaOQ=
-  /lit-html/0.9.0:
-    dev: false
-    resolution:
-      integrity: sha512-j0W8WNcf/VRsC+vxeZwgh4KfztQ2gqLF5a80G85qdffnKQ0yTC2IQpU3FRmFjRdRTezvszb1rGMm7jScMc2Mog==
   /load-json-file/1.1.0:
     dependencies:
       graceful-fs: 4.1.11
@@ -8227,6 +8216,6 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 5
 shrinkwrapVersion: 3
 specifiers:
-  '@polymer/lit-element': latest
+  '@polymer/polymer': next
   '@webcomponents/webcomponentsjs': next
   polymer-cli: next

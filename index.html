@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lit-element example</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Polymer 3.0 example</title>
     <!-- Polyfills only needed for Firefox and Edge. -->
     <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-  </head>  
+  </head>
 <body>
-  <my-element mood="happy"></my-element>
-  
-  <script type="module">
-    import {LitElement, html} from '@polymer/lit-element';
 
-    class MyElement extends LitElement {
+  <!-- Define a new Custom Element by extending Polymer's base class  -->
+  <script type="module">
+    import {PolymerElement, html} from '@polymer/polymer';
+
+    class MyElement extends PolymerElement {
 
       static get properties() { return { mood: String }}
 
-      _render({mood}) {
-        return html`You are ${mood} today!`;
+      static get template() {
+        return html`
+          <style> .mood { color: green; } </style>
+          Web Components are <span class="mood">[[mood]]</span>!
+        `;
       }
     }
 
     customElements.define('my-element', MyElement);
   </script>
 
-  <!-- include the Glitch button to show what the webpage is about and
-        to make it easier for folks to view source and remix -->
+  <!--  Use element like any other HTML tag  -->
+  <my-element mood="awesome"></my-element>
+  
+  <!-- Show glitch button to allow re-mixing this glitch -->
   <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
   <script src="https://button.glitch.me/button.js"></script>
 </body>

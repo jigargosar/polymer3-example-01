@@ -1,12 +1,12 @@
 {
-  "name": "hello-lit-element",
+  "name": "polymer-element-element",
   "version": "0.0.1",
-  "description": "Sample-lit-element",
+  "description": "Polymer 3.0 example",
   "scripts": {
     "start": "polymer serve --module-resolution=node"
   },
   "dependencies": {
-    "@polymer/lit-element": "latest",
+    "@polymer/polymer": "next",
     "polymer-cli": "next",
     "@webcomponents/webcomponentsjs": "next"
   },
