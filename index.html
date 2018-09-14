@@ -16,9 +16,12 @@
       static get properties() { return { mood: String }}
 
       static get template() {
-        return html`
-          <style> .mood { color: green; } </style>
-          Web Components are <span class="mood">[[mood]]</span>!
+        return html`<style>
+  .mood {
+    color: green;
+  }
+</style>
+Web Components are <span class="mood">[[mood]]</span>!
         `;
       }
     }
